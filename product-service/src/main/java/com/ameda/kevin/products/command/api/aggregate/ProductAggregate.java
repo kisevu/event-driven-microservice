@@ -2,6 +2,7 @@ package com.ameda.kevin.products.command.api.aggregate;
 
 import com.ameda.kevin.products.command.api.commands.CreateProductCommand;
 import com.ameda.kevin.products.command.api.events.ProductCreatedEvent;
+import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
@@ -17,6 +18,7 @@ public class ProductAggregate {
     private String name;
     private BigDecimal price;
     private Integer quantity;
+    @CommandHandler
     public ProductAggregate(CreateProductCommand createProductCommand){
         ProductCreatedEvent productCreatedEvent = ProductCreatedEvent.builder().build();
         //we can use the builder pattern to create else we can do as below...
