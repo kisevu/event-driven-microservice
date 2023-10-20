@@ -23,4 +23,6 @@
 **Payload info from Axon dashboard and things working perfectly**
 
 ![payload info](https://github.com/kisevu/event-driven-microservice/blob/main/product-service/src/main/resources/images/payload%20information.PNG)
-
+****
+**QUERY API handled**
+![query api](https://github.com/kisevu/event-driven-microservice/blob/main/product-service/src/main/resources/images/query%20retrieval.PNG)
